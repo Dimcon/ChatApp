@@ -18,7 +18,7 @@ android {
 
     defaultConfig {
         applicationId "com.cybermelon.chatappmain"
-        minSdkVersion 9
+        minSdkVersion 14
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
@@ -37,7 +37,24 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile('com.strongloop:loopback-sdk-android:1.5.+') {
+        //exclude group: 'com.loopj.android' //by artifact name
+    }
+
     compile 'com.android.support:appcompat-v7:22.2.0'
     compile 'com.android.support:support-v4:22.2.0'
+
+    compile 'com.google.code.gson:gson:2.0'
+
+    compile 'com.github.navasmdc:MaterialDesign:1.5@aar'
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile 'com.mcxiaoke.volley:library:1.0.+'
+    compile 'com.squareup.picasso:picasso:2.3.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.2@aar'
+    compile 'com.github.ksoichiro:android-observablescrollview:1.5.2'
+    compile 'com.melnykov:floatingactionbutton:1.3.0'
+    compile 'com.hannesdorfmann:swipeback:1.0.0'
+    compile 'com.balysv.materialmenu:material-menu-toolbar:1.5.4'
 }

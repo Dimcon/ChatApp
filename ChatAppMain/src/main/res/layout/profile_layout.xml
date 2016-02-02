@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:id="@+id/profile_view">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:elevation="0dp">
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/relativeLayout2">
+
+            <ImageView
+                    android:layout_width="340dp"
+                    android:layout_height="300dp"
+                    android:id="@+id/imageView2"
+                    android:background="#ffd2d1d4"
+                    android:layout_marginTop="5dp"
+                    android:elevation="10dp"
+                    android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffdfdfdf"
+                android:elevation="5dp"
+                android:id="@+id/relativeLayout"
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerHorizontal="true">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="John Doe Mcgregor"
+                    android:id="@+id/textView"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="2dp"
+                    />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="They never thought they'd see me again."
+                    android:id="@+id/textView2"
+                    android:layout_below="@+id/textView"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@+id/imageView"/>
+
+            <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/imageView"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/contact_circle"
+                    android:elevation="5dp"
+                    android:outlineProvider="background"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
